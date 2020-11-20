@@ -19,3 +19,7 @@
 ### Đưa Container chứa CircleAvatar vào Widget Column, sau đó chèn thêm một số widgets vào Column:
 
 ![Logo TechMaster](screenshots/PrtSc5.png)
+
+### Thêm Avatar:
+
+![Logo TechMaster](screenshots/PrtSc6.png)
