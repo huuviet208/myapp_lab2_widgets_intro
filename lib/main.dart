@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MyApp()
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -10,23 +12,106 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Việt')),
-        body: Container(
-          color: Colors.blueAccent,
-          child: Row(
-            children: [
-            Icon(
-              Icons.favorite,
-              color: Colors.redAccent,
-              size: 65,
-            ),
-            Icon(
-              Icons.star,
-              color: Colors.yellowAccent,
-              size: 65,
-            )
-          ],
-         ),
+        appBar: AppBar(title: Text('Nguyễn Hữu Việt - 1721050602')),
+        body: SafeArea(
+          child: Stack(
+            children: <Widget>[
+              Container(
+                height: 300,
+                width: double.infinity,
+                color: Colors.deepOrangeAccent,                
+              ),
+              Container(               
+                alignment: Alignment.topCenter,
+                margin: EdgeInsets.only(top: 20),
+                child: CircleAvatar(
+                  radius: 60,
+                  child: Icon(Icons.battery_full, size:120),                  
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 260),
+                padding: EdgeInsets.only(left: 10, right: 10),
+                height: 140,
+                width: double.infinity,
+                child: Card(
+                  child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'Photos',
+                          style: TextStyle(color: Colors.black54),
+                        ),
+                        Text(
+                          '5,000',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'Followers',
+                          style: TextStyle(color: Colors.black54),
+                        ),
+                        Text(
+                          '5,000',
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'Favorites',
+                          style: TextStyle(color: Colors.black54),
+                        ),
+                        Text(
+                          '5,000',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                  ),
+                  color: Colors.white, 
+                  elevation: 70,
+                ),
+              ),
+            ],
+          ),
+          // child: Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     Text(
+          //       'Tôi',
+          //       style: Theme.of(context).textTheme.headline2,
+          //     ),
+          //     Icon(
+          //       Icons.favorite,
+          //       color: Colors.redAccent,
+          //       size: 44,
+          //     ),
+          //     Text(
+          //       'Flutter',
+          //       style: Theme.of(context).textTheme.headline2,
+          //     ),
+          //   ],
+          // ),
         ),
       ),
     );
