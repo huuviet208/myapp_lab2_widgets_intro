@@ -17,17 +17,39 @@ class MyApp extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                height: 300,
-                width: double.infinity,
-                color: Colors.deepOrangeAccent,                
-              ),
-              Container(               
-                alignment: Alignment.topCenter,
-                margin: EdgeInsets.only(top: 20),
-                child: CircleAvatar(
-                  radius: 60,
-                  child: Icon(Icons.battery_full, size:120),                  
-                ),
+                 height: 300,
+                 width: double.infinity,
+                 color: Colors.deepOrangeAccent,
+                child: Column(
+                  children: <Widget>[
+                    Container(               
+                      alignment: Alignment.topCenter,
+                      margin: EdgeInsets.only(top: 20),
+                      child: CircleAvatar(
+                        radius: 60,
+                        backgroundImage: AssetImage('screenshots/Arts/738.jpg'),
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    Text(
+                    'Nguyễn Hữu Việt',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                    'Hanoi University of Mining and Geology',
+                    style: Theme.of(context).textTheme.subtitle1,
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                    'Github: https://github.com/huuviet208',
+                    style: Theme.of(context).textTheme.subtitle1,
+                    ),
+                  ],
+                ),                
               ),
               Container(
                 margin: EdgeInsets.only(top: 260),
@@ -42,27 +64,11 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          'Photos',
+                          'MSV',
                           style: TextStyle(color: Colors.black54),
                         ),
                         Text(
-                          '5,000',
-                          style: TextStyle(
-                            color: Colors.black87,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text(
-                          'Followers',
-                          style: TextStyle(color: Colors.black54),
-                        ),
-                        Text(
-                          '5,000',
+                          '1721050602',
                           style: TextStyle(
                             color: Colors.red,
                             fontSize: 16,
@@ -74,11 +80,27 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          'Favorites',
+                          'Class',
                           style: TextStyle(color: Colors.black54),
                         ),
                         Text(
-                          '5,000',
+                          'DCCTMM62A',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'Khóa',
+                          style: TextStyle(color: Colors.black54),
+                        ),
+                        Text(
+                          'K62',
                           style: TextStyle(
                             color: Colors.black87,
                             fontSize: 16,
